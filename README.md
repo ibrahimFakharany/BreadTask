@@ -16,7 +16,7 @@
 - <b>ComposeDestination</b> -> for navigating between composables
 - <b>Paging3</b> -> for paginated the data that is fetched from API and from the database
 - <b>Room</b> -> for storing data locally 
-- <b>hilt</b> -> for dependency injection
+- <b>Hilt</b> -> for dependency injection
 - <b>Coroutines</b> -> asynchronous operations
 - <b>KotlinFlow</b> -> for manipulating the streams of data
 - <b>Retrofit</b> -> fetching the data from API
