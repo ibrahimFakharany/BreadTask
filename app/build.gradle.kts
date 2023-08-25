@@ -94,6 +94,7 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
+    implementation("androidx.core:core-splashscreen:1.0.0")
     implementation(libs.bundles.hilt)
     kapt(libs.hilt.android.compiler)
     implementation(libs.bundles.retrofit)
@@ -102,4 +103,5 @@ dependencies {
     implementation(libs.kotlinx.serialization.json)
     implementation("io.github.raamcosta.compose-destinations:core:1.8.42-beta")
     ksp("io.github.raamcosta.compose-destinations:ksp:1.8.42-beta")
+
 }

@@ -8,6 +8,7 @@ import com.breadtask.domain.IPostsRepository
 import com.breadtask.model.Comment
 import com.breadtask.model.Post
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.flow
 import javax.inject.Inject
 
 @OptIn(ExperimentalPagingApi::class)
@@ -23,11 +24,16 @@ class PostsRepository @Inject constructor(
             }).flow
     }
 
-    override fun getComments(postId: Int): Flow<PagingData<Comment>> {
-        return Pager(config = PagingConfig(pageSize = PER_PAGE),
+    override fun getComments(postId: Long): Flow<PagingData<Comment>> {
+        return Pager(
+            config = PagingConfig(pageSize = PER_PAGE),
             initialKey = 1,
             pagingSourceFactory = {
                 CommentsPagingSource(remoteDataSource, postId)
             }).flow
+    }
+
+    override fun getPostDetails(postId: Long): Flow<Post> {
+        return flow { emit(localDataSource.getPostDetails(postId)) }
     }
 }

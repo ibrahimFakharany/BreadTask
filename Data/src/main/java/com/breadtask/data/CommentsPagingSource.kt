@@ -1,11 +1,10 @@
 package com.breadtask.data
 
-import android.util.Log
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
 import com.breadtask.model.Comment
 
-class CommentsPagingSource(val remoteSource: IRemoteDataSource, val postId: Int) :
+class CommentsPagingSource(val remoteSource: IRemoteDataSource, val postId: Long) :
     PagingSource<Int, Comment>() {
     override fun getRefreshKey(state: PagingState<Int, Comment>): Int? {
         return state.anchorPosition?.let { anchorPosition ->

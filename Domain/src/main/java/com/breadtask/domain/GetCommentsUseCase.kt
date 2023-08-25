@@ -7,7 +7,7 @@ import javax.inject.Inject
 
 class GetCommentsUseCase @Inject constructor(private val postsRepository: IPostsRepository) {
 
-    operator fun invoke(postId: Int): Flow<PagingData<Comment>> {
+    operator fun invoke(postId: Long): Flow<PagingData<Comment>> {
         return postsRepository.getComments(postId)
     }
 }

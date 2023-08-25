@@ -9,13 +9,13 @@ import retrofit2.http.Query
 interface PostsService {
     @GET("posts")
     suspend fun getPosts(
-        @Query("page") page: Int? = 1, @Query("per_page") perPage: Int? = 100
+        @Query("page") page: Int? = 1, @Query("per_page") perPage: Int? = 10
     ): List<Post>
 
     @GET("posts/{id}/comments")
     suspend fun getCommentsForPost(
-        @Path("id") postId: Int,
+        @Path("id") postId: Long,
         @Query("page") page: Int? = 1,
-        @Query("per_page") perPage: Int? = 100
+        @Query("per_page") perPage: Int? = 10
     ): List<Comment>
 }

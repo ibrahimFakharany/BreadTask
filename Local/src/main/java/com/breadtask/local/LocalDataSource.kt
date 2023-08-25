@@ -29,6 +29,10 @@ class LocalDataSource @Inject constructor(
         return keysDao.getKeys(id)
     }
 
+    override suspend fun getPostDetails(id: Long): Post {
+        return postsDao.getPostById(id)
+    }
+
     override suspend fun saveData(
         isRefresh: Boolean, posts: List<Post>, keys: List<PostRemoteKeys>
     ) = database.withTransaction {

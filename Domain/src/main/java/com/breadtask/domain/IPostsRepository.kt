@@ -7,5 +7,6 @@ import kotlinx.coroutines.flow.Flow
 
 interface IPostsRepository {
     fun getPosts(): Flow<PagingData<Post>>
-    fun getComments(postId: Int): Flow<PagingData<Comment>>
+    fun getComments(postId: Long): Flow<PagingData<Comment>>
+    fun getPostDetails(postId: Long): Flow<Post>
 }

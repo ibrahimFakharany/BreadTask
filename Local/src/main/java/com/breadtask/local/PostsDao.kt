@@ -17,4 +17,7 @@ interface PostsDao {
 
     @Query("DELETE FROM post_table")
     fun clearAll()
+
+    @Query("SELECT * FROM post_table WHERE id=:id")
+    suspend fun getPostById(id: Long): Post
 }

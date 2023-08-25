@@ -5,5 +5,5 @@ import com.breadtask.model.Post
 
 interface IRemoteDataSource {
     suspend fun fetchPosts(page: Int?, perPage: Int?): List<Post>
-    suspend fun getCommentsForPost(postId: Int, page: Int?, perPage: Int?): List<Comment>
+    suspend fun getCommentsForPost(postId: Long, page: Int?, perPage: Int?): List<Comment>
 }

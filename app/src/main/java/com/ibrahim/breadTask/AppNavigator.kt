@@ -8,6 +8,6 @@ import com.ramcosta.composedestinations.navigation.navigateTo
 
 class AppNavigator(val navigator: NavHostController) : HomeScreenNavigator {
     override fun navigateToPostDetails(id: Long) {
-        navigator.navigateTo(PostDetailsScreenDestination() within NavGraph.postsGraph)
+        navigator.navigateTo(PostDetailsScreenDestination(id) within NavGraph.postsGraph)
     }
 }

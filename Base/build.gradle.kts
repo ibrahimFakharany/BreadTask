@@ -30,6 +30,12 @@ android {
             )
         }
     }
+    buildFeatures {
+        compose = true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion = "1.4.3"
+    }
 }
 
 dependencies {
@@ -40,7 +46,10 @@ dependencies {
     implementation(libs.bundles.coroutines)
     implementation(libs.androidx.lifecycle.viewmodel)
     implementation(libs.androidx.lifecycle.process)
+    implementation(project(mapOf("path" to ":Model")))
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.junit4)
     androidTestImplementation(libs.androidx.test.espresso.core)
+    implementation(platform(libs.androidx.compose.bom))
+    implementation(libs.bundles.compose)
 }

@@ -9,6 +9,7 @@ interface ILocalDataSource {
     fun getPostsPagingSource(): PagingSource<Int, Post>
     suspend fun saveKeys(keys: List<PostRemoteKeys>)
     suspend fun getRemoteKeys(id: Long): PostRemoteKeys
+    suspend fun getPostDetails(id: Long): Post
     suspend fun saveData(
         isRefresh: Boolean,
         posts: List<Post>,
