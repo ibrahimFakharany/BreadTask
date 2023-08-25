@@ -16,7 +16,7 @@
 ## Architecture
 - Clean architecture
 - MVI
-- 
+- Multi-module
 ## Libraries 
 
 - <b>Jetpack compose </b>-> for developing the app UI
