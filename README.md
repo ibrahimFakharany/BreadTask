@@ -12,10 +12,11 @@
 
 ## Libraries 
 
-- Jetpack compose
-- ComposeDestination
-- Paging3
-- Room
-- Coroutines
-- KotlinFlow
-- Retrofit
+- Jetpack compose -> for developing the app UI
+- ComposeDestination -> for navigating between composables
+- Paging3 -> for paginated the data that is fetched from API and from the database
+- Room -> for storing data locally 
+- hilt -> for dependency injection
+- Coroutines -> asynchronous operations
+- KotlinFlow -> for manipulating the streams of data
+- Retrofit -> fetching the data from API
