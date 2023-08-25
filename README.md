@@ -1,6 +1,6 @@
 # BreadTask
 
-## Android Project for getting posts from web API (https://gorest.co.in/) 
+## Android Project for getting a paginated offline first list of posts from web API
 
 ##### For getting posts use endpoint https://gorest.co.in/public/v2/posts
 ##### For getting comments on posts use endpoint https://gorest.co.in/public/v2/posts/{postId}/comments
@@ -15,6 +15,7 @@
 - Jetpack compose
 - ComposeDestination
 - Paging3
+- Room
 - Coroutines
 - KotlinFlow
 - Retrofit
