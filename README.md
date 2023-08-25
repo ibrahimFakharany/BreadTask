@@ -1,6 +1,10 @@
 # BreadTask
 
-## Android Project for getting a paginated offline first list of posts from web API
+## Android Project for getting a paginated and offline-first list of posts from web API
+
+## Description
+
+###### The app downloads the data first from the API and then saves it in the database lastly showing it to the user To ensure an excellent user experience and ensure working in weak internet conditions
 
 ##### For getting posts use endpoint https://gorest.co.in/public/v2/posts
 ##### For getting comments on posts use endpoint https://gorest.co.in/public/v2/posts/{postId}/comments
@@ -9,7 +13,10 @@
 
 <img src="https://imgur.com/a8uDDy1.png" width="200">  <img src="https://imgur.com/UPQcOo7.png" width="200">     <img src="https://imgur.com/C85zm0l.png" width="200">
 
-
+## Architecture
+- Clean architecture
+- MVI
+- 
 ## Libraries 
 
 - <b>Jetpack compose </b>-> for developing the app UI
