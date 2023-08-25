@@ -12,7 +12,7 @@
 
 ## Libraries 
 
-- Jetpack compose -> for developing the app UI
+- <b>Jetpack compose </b>-> for developing the app UI
 - ComposeDestination -> for navigating between composables
 - Paging3 -> for paginated the data that is fetched from API and from the database
 - Room -> for storing data locally 
