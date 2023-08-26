@@ -2,7 +2,7 @@
 
 ## Description
 
-##### The app downloads the data first from the API and then saves it in the database lastly showing it to the user To ensure an excellent user experience and ensure working in weak internet conditions
+##### Android app for fetching the post list from endpoint and comments for each post, The app downloads the data first from the API and then saves it in the database lastly showing it to the user To ensure an excellent user experience and ensure working in weak internet conditions
 
 ##### For getting posts use endpoint https://gorest.co.in/public/v2/posts
 ##### For getting comments on posts use endpoint https://gorest.co.in/public/v2/posts/{postId}/comments
