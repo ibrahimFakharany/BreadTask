@@ -55,7 +55,7 @@ fun HomeScreen(navigator: HomeScreenNavigator, viewModel: HomeViewModel = hiltVi
                 }
 
             }
-            if (posts.loadState.refresh is LoadState.Error) item {
+            if (posts.loadState.refresh is LoadState.Error && posts.itemCount > 0) item {
                 AppendErrorScreen {
                     posts.retry()
                 }
