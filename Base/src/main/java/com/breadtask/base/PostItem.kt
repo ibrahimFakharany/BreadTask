@@ -41,7 +41,8 @@ fun PostItem(modifier: Modifier = Modifier, post: Post) {
             Spacer(modifier = Modifier.width(14.dp))
             Column {
                 Text(
-                    post.title, style = TextStyle(fontSize = 18.sp, fontWeight = FontWeight.Bold)
+                    post.id.toString(),
+                    style = TextStyle(fontSize = 18.sp, fontWeight = FontWeight.Bold)
                 )
                 Spacer(modifier = Modifier.height(14.dp))
                 Text(post.body, style = TextStyle(fontSize = 14.sp))

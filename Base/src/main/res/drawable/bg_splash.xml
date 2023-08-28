@@ -3,9 +3,8 @@
     <item>
         <color android:color="@android:color/white" />
     </item>
-    <item>
-        <bitmap
-            android:gravity="center"
-            android:src="@drawable/posts" />
-    </item>
+    <item
+
+        android:drawable="@drawable/bread_task"
+        android:gravity="center"></item>
 </layer-list>

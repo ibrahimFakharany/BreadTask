@@ -90,9 +90,7 @@ fun PostDetailsScreen(viewModel: PostDetailsViewModel) {
                     is LoadState.NotLoading -> Unit
                     is LoadState.Loading -> item {
 
-                        CircularProgressIndicator(
-
-                        )
+                        CircularProgressIndicator()
                     }
 
                     is LoadState.Error -> item {
